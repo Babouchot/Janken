@@ -12,8 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
+    <center>
         <h1>Bienvenue sur le jeu Janken !</h1>
-        <p><a href="index.jsp">Inscris toi</a> ou joue en te connectant !</p>
+        <p><a href="inscription.jsp">Inscris toi</a> ou joue en te connectant !</p>
         <form method="post" action="/customer-cmp-war/createCustomer.jsp">
             <table border=10>
                 <tr>
@@ -29,5 +30,6 @@
                 <input type="submit" name="submit" value="Login">
             </p>
         </form>
+    </center>
     </body>
 </html>

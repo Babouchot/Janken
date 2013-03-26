@@ -2,18 +2,18 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package session;
+package janken.ejb.session;
+
+import javax.ejb.Local;
 
 import java.util.List;
-import javax.ejb.Remote;
-import persistence.Gamer;
-
+import janken.ejb.persistence.Gamer;
 /**
  *
  * @author maureill
  */
-@Remote
-public interface GamerSessionRemote {
+@Local
+public interface GamerSessionLocal {
     public Gamer searchForGamer(String id);
     
     public void persist(Object obj);
@@ -25,4 +25,5 @@ public interface GamerSessionRemote {
     public List findAllGamers();
     
     public void remove(Object obj);
+    
 }

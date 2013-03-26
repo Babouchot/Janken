@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package session;
+package janken.ejb.session;
 
 import javax.ejb.Stateless;
 import javax.ejb.Stateful;
@@ -19,7 +19,7 @@ import javax.jms.MessageProducer;
 import javax.jms.Queue;
 import javax.jms.Session;
 import javax.jms.TextMessage;
-import persistence.Gamer;
+import janken.ejb.persistence.Gamer;
 
 /**
  *
@@ -29,7 +29,7 @@ import persistence.Gamer;
 @TransactionManagement(value=TransactionManagementType.CONTAINER)
 public class GamerSession implements GamerSessionLocal, GamerSessionRemote{
     
-    @javax.persistence.PersistenceContext(unitName="persistence_sample")
+    @javax.persistence.PersistenceContext(unitName="Janken-ejbPU")
     private EntityManager em ; 
     
     

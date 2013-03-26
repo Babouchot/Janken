@@ -4,3 +4,8 @@
 *.jar
 *.war
 *.ear
+/dist/
+/build/
+/Janken-ejb/dist/
+/Janken-war/build/
+/Janken-war/dist/

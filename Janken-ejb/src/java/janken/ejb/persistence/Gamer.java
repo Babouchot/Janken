@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package persistence;
+package janken.ejb.persistence;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -44,6 +44,15 @@ public class Gamer implements Serializable {
         this.etat = etat;
         this.victoires = victoires;
         this.defaites = defaites;
+    }
+    
+    public Gamer(String mail, String pseudo, String mdp) {
+        this.mail = mail;
+        this.pseudo = pseudo;
+        this.mdp = mdp;
+        this.etat = etat.ABSENT;
+        this.victoires = 0;
+        this.defaites = 0;
     }
     
 
